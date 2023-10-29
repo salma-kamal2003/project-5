@@ -1,0 +1,51 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="text-center text-light my-4">
+        <h1 class="mb-4">Todo List</h1>
+        <form id="searchForm">
+          <input
+            class="form-control m-auto"
+            type="text"
+            placeholder="search todos"
+            id="searchText"
+            autocomplete="off"
+          />
+        </form>
+      </header>
+
+      <ul class="list-group todos mx-auto text-light" id="todosUL"></ul>
+
+      <form class="text-center my-4" id="addForm">
+        <input
+          id="addText"
+          class="form-control m-auto"
+          type="text"
+          placeholder="Add a new todo..."
+          autocomplete="off"addText
+        />
+      </form>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
